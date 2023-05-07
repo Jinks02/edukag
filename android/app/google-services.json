@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "485367620180",
+    "project_id": "edukag-ce395",
+    "storage_bucket": "edukag-ce395.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:485367620180:android:53afcf2ed1609572a9c3c1",
+        "android_client_info": {
+          "package_name": "com.Alleazetech.edukag"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "485367620180-15rge6qe5ogcaeiavma755h4pv2amr3a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.Alleazetech.edukag",
+            "certificate_hash": "2a1fd90da2e76130948b42f14bf80b1ab953d980"
+          }
+        },
+        {
+          "client_id": "485367620180-mvfq48jo0pdffciu7tog9jp9pa5lhqa8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.Alleazetech.edukag",
+            "certificate_hash": "62e34013924772db7a570232b074efe8c52948b1"
+          }
+        },
+        {
+          "client_id": "485367620180-ch092t44c2da3v3j7gohtg907gl7i2e7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7CliQMBmoBkSiCeTnCS5qfkz3VSTzMCM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "485367620180-7nm5rlgegpkhvbqpi49i93knfriub60i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
