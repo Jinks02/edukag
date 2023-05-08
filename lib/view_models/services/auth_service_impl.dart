@@ -1,8 +1,8 @@
 import 'dart:async';
 import 'dart:developer';
 
+import 'package:edukag/screens/home_view.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:sign_in_with_apple/sign_in_with_apple.dart';
@@ -22,6 +22,8 @@ class AuthServiceImpl extends AuthService {
   final User? currentUser = FirebaseAuth.instance.currentUser;
   final GoogleSignIn _googleSignIn = GoogleSignIn();
   int? _resendToken;
+  final GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
+
   @override
   Future<UserCredential?> signUp(
       String email, String password, String name) async {
@@ -103,7 +105,7 @@ class AuthServiceImpl extends AuthService {
     await _auth.verifyPhoneNumber(
       phoneNumber: phoneNumber,
       verificationCompleted: (PhoneAuthCredential credential) async {
-        await _auth.signInWithCredential(credential);
+        //await _auth.signInWithCredential(credential);
       },
       timeout: const Duration(seconds: 20),
       verificationFailed: (FirebaseAuthException e) {
@@ -117,6 +119,9 @@ class AuthServiceImpl extends AuthService {
       forceResendingToken: _resendToken,
       codeAutoRetrievalTimeout: (String id) {
         print("code time out");
+        log(id);
+        log(_auth.currentUser!.uid);
+        log("Should go next");
       },
     );
 

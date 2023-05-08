@@ -22,11 +22,27 @@
           }
         },
         {
+          "client_id": "485367620180-9ks60o8f6tpgmhe652fp0los63e9lp78.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.Alleazetech.edukag",
+            "certificate_hash": "cc3ecbd1ef900006bf6a45d252865da0edfd4c89"
+          }
+        },
+        {
           "client_id": "485367620180-mvfq48jo0pdffciu7tog9jp9pa5lhqa8.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.Alleazetech.edukag",
             "certificate_hash": "62e34013924772db7a570232b074efe8c52948b1"
+          }
+        },
+        {
+          "client_id": "485367620180-pmc0q53s7nlkk1u4s9dpp0ac2eg8j6v2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.Alleazetech.edukag",
+            "certificate_hash": "bb6830226e9faf501239b8e9dd46802560b3a323"
           }
         },
         {

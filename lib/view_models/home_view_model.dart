@@ -43,7 +43,7 @@ class HomeViewModel extends ChangeNotifier {
     var address =
         await placemarkFromCoordinates(position.latitude, position.longitude);
     location = address[0].subLocality ?? '';
-    location = location + ', ' + address[0].locality! ?? '';
+    location = location + ', ' + address[0].locality!;
     notifyListeners();
     return address[0];
   }

@@ -31,7 +31,8 @@ class OtpAuthViewModel extends ChangeNotifier {
       setLoading(false);
     } catch (e) {
       print(e.toString());
-    }
+    } 
+    log(verificationId);
     return verificationId;
   }
 
@@ -42,10 +43,12 @@ class OtpAuthViewModel extends ChangeNotifier {
       setLoading(true);
       userCredential = await authService.signInWithOTP(verificationId, smsCode);
       setLoading(false);
+      log(userCredential!.user.toString());
       return userCredential;
     } catch (e) {
       print(e.toString());
     }
+    return null;
   }
 
   Future<void> signOut() async {
